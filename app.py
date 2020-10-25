@@ -3,10 +3,10 @@ from flask_cors import CORS
 
 app = Flask(__name__)
 
-@app.route('/', methods=['GET'])
+@app.route('/', methods=['POST'])
 def login():
 
-    if request.method == "GET":
+    if request.method == "POST":
 
         return '<h1>Hola amigos de youtube</h1>'
 
