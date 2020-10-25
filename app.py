@@ -10,7 +10,7 @@ def login():
         return '<h1>Hola amigos de youtube</h1>'
 
 @app.route('/')
-def index():
+def index():    
 	return "<h1>Texas</h1>"
 
 if __name__ == "__main__":
