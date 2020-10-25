@@ -1,16 +1,15 @@
 from flask import Flask, request, jsonify
-from flask_cors import CORS
 
 app = Flask(__name__)
 
-@app.route('/', methods=['POST'])
+@app.route('/login', methods=['GET'])
 def login():
 
-    if request.method == "POST":
+    if request.method == "GET":
 
         return '<h1>Hola amigos de youtube</h1>'
 
-@app.route('/login', methods=['POST'])
+@app.route('/')
 def index():
 	return "<h1>Texas</h1>"
 
